@@ -1,0 +1,155 @@
+:root {
+  --primary-green: #16a34a;
+  --dark-green: #15803d; 
+  --light-green: #dcfce7;
+  --accent-green: #22c55e;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --background: #ffffff;
+  --card-bg: #f8fafc;
+}
+.navbar {
+  background-color: #16a34a; /* Green */
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  /* আপনার existing styles */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* এই line যোগ করুন */
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #e5e7eb;
+}
+
+.donate-btn {
+  background: white;
+  color: #16a34a;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.donate-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Mobile Menu Dropdown */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #15803d;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #16a34a;
+}
+
+.mobile-menu a:hover {
+  background: #16a34a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .donate-btn {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  .logo span {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .donate-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+}

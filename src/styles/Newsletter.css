@@ -1,0 +1,144 @@
+.newsletter-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  color: white;
+}
+
+.newsletter-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.newsletter-text h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.newsletter-text p {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.subscribe-form {
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.email-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #4b5563;
+  border-radius: 0.5rem;
+  background: #374151;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #16a34a;
+}
+
+.email-input::placeholder {
+  color: #9ca3af;
+}
+
+.subscribe-btn {
+  background: #16a34a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background: #15803d;
+}
+
+.privacy-note {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.success-message {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #065f46;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #047857;
+}
+
+.success-icon {
+  width: 40px;
+  height: 40px;
+  background: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.success-message p {
+  margin: 0;
+  color: #d1fae5;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .newsletter-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .newsletter-text h2 {
+    font-size: 1.875rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-section {
+    padding: 3rem 0;
+  }
+
+  .newsletter-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .success-message {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}

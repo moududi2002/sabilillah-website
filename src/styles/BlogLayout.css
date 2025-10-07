@@ -1,0 +1,27 @@
+.blog-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.blog-main {
+  min-width: 0; /* Prevents overflow */
+}
+
+.blog-sidebar {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+@media (max-width: 968px) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .blog-sidebar {
+    position: static;
+  }
+}

@@ -1,0 +1,367 @@
+.faq-contact {
+  padding: 4rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Contact Methods Grid */
+.contact-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contact-method-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-method-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.method-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.method-content h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.method-description {
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.method-details {
+  color: #059669;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.action-btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn.phone {
+  background: #059669;
+  color: white;
+}
+
+.action-btn.phone:hover {
+  background: #047857;
+}
+
+.action-btn.email {
+  background: #f0fdf4;
+  color: #059669;
+  border: 2px solid #059669;
+}
+
+.action-btn.email:hover {
+  background: #059669;
+  color: white;
+}
+
+.action-btn.chat {
+  background: #fef3c7;
+  color: #92400e;
+  border: 2px solid #fcd34d;
+}
+
+.action-btn.chat:hover {
+  background: #fcd34d;
+}
+
+.action-btn.visit {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 2px solid #3b82f6;
+}
+
+.action-btn.visit:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Additional Help */
+.additional-help {
+  margin-bottom: 3rem;
+}
+
+.help-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.help-column h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #059669;
+}
+
+/* Topics List */
+.topics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.topic-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.75rem;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.topic-item:hover {
+  background: #f1f5f9;
+}
+
+.topic-name {
+  color: #374151;
+  font-weight: 500;
+}
+
+.topic-count {
+  color: #059669;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: #f0fdf4;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+/* Resources List */
+.resources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 0.75rem;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.resource-link:hover {
+  background: #059669;
+  color: white;
+  transform: translateX(5px);
+}
+
+/* Support Hours */
+.support-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hour-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f8fafc;
+  border-radius: 0.5rem;
+}
+
+.day {
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.time {
+  color: #059669;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.emergency-note {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: #92400e;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.emergency-note strong {
+  color: #dc2626;
+}
+
+/* Feedback Section */
+.feedback-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feedback-card {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feedback-icon {
+  font-size: 3rem;
+}
+
+.feedback-header h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-header p {
+  opacity: 0.9;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.feedback-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.suggestion-btn,
+.feedback-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.suggestion-btn {
+  background: white;
+  color: #059669;
+}
+
+.feedback-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.suggestion-btn:hover,
+.feedback-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-contact {
+    padding: 3rem 0;
+  }
+  
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-methods-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .help-columns {
+    grid-template-columns: 1fr;
+  }
+  
+  .feedback-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .feedback-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-method-card {
+    padding: 1.5rem;
+  }
+  
+  .topic-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .hour-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .feedback-actions {
+    flex-direction: column;
+  }
+}

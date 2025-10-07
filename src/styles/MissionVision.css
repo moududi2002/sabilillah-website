@@ -1,0 +1,85 @@
+.mission-vision {
+  padding: 5rem 0;
+  background: white;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.mv-card {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission {
+  background: #f0fdf4;
+  border: 2px solid #dcfce7;
+}
+
+.vision {
+  background: #f8fafc;
+  border: 2px solid #f1f5f9;
+}
+
+.values {
+  background: #fffbeb;
+  border: 2px solid #fef3c7;
+}
+
+.mv-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.mv-card h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.mv-card p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.values li {
+  padding: 0.5rem 0;
+  color: #6b7280;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.values li:before {
+  content: "✓";
+  color: #16a34a;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mv-card {
+    padding: 2rem;
+  }
+}

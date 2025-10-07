@@ -1,0 +1,27 @@
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.faq-sidebar {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.faq-main {
+  min-width: 0;
+}
+
+@media (max-width: 968px) {
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .faq-sidebar {
+    position: static;
+  }
+}

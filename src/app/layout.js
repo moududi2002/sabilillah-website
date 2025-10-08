@@ -9,11 +9,12 @@ export const metadata = {
     url: 'https://www.sabilillahfoundation.org',
     images: [
       {
-        url: '/images/og-image.jpg', // Social media preview image
+        url: '/images/logo.svg', // Temporary
         width: 1200,
         height: 630,
         alt: 'Sabilillah Foundation',
-      }
+      },
+    
     ],
     type: 'website',
     siteName: 'Sabilillah Foundation',

@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import '../../styles/TeamGrid.css'
+import '../../styles/about-us/teamGrid.css'
 
 export default function TeamGrid() {
   const [activeFilter, setActiveFilter] = useState('all')

@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import '../../styles/HistoryTimeline.css'
+import '../../styles/about-us/historyTimeline.css'
 
 export default function HistoryTimeline() {
   const [activeYear, setActiveYear] = useState(2024)

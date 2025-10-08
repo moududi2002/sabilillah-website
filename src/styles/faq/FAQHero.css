@@ -32,6 +32,13 @@
   text-align: center;
 }
 
+.statText {
+  font-weight: bold;
+  color:linear-gradient(135deg, #059669 0%, #047857 100%);
+  display: block; /* number এবং label আলাদা লাইনে দেখানোর জন্য */
+  margin: 0.2rem 0;
+}
+
 .number {
   display: block;
   font-size: 2.5rem;

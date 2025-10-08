@@ -9,11 +9,20 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
+        {/* Mobile Menu Button */}
+        <button 
+          className="mobile-menu-btn"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          ☰
+        </button>
+       <Link href="/" className="skip-link" style={{ textDecoration: 'none', color: 'inherit' }}>
+        {/* Logo */} 
        <div className="logo">
             <img src="/images/logo.svg" alt="Sabilillah Foundation" className="logo-image" />
             <span>Sabilillah Foundation</span>
         </div>
-        
+        </Link>
         {/* Desktop Menu */}
         <div className="nav-links">
           <Link href="/">Home</Link>
@@ -24,14 +33,7 @@ export default function Navbar() {
         <Link href="/faq">FAQ</Link>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button 
-          className="mobile-menu-btn"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          ☰
-        </button>
-
+        
         {/* Donate Button */}
         <button className="donate-btn" onClick={() => window.location.href = "/donation"}>Donate Now</button>
       </div>

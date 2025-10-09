@@ -15,13 +15,13 @@ export default function TeamGrid() {
   const teamMembers = [
     {
       id: 1,
-      name: "Dr. Mohammad Rahman",
+      name: "Dr. Anichur Rahman",
       position: "Chairman & Founder",
       category: "management",
-      bio: "Former professor of Islamic Studies with 25+ years of experience in social work and community development. PhD in Social Welfare from University of Dhaka.",
+      bio: "Former professor of Computer Science and Engineering with 5+ years of experience in social work and community development. PhD in Applied Computing from Georgia Southern University, USA.",
       expertise: ["Social Work", "Community Development", "Education"],
-      experience: "25+ years",
-      photo: "/images/team/chairman.jpg"
+      experience: "5+ years",
+      photo: "/images/chairman.jpg"
     },
     {
       id: 2, 

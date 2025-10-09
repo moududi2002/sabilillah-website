@@ -1,4 +1,4 @@
-import '../../styles/about-us/aboutHero.css'
+import '../../styles/about-us/AboutHero.css'
 
 export default function AboutHero() {
   return (

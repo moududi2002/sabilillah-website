@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import '../../styles/about-us/donorCategories.css'
+import '../../styles/about-us/DonorCategories.css'
 
 export default function DonorCategories() {
   const [activeFilter, setActiveFilter] = useState('all')

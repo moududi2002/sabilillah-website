@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import '../../styles/AdminLogin.css'; // Ensure you have this CSS file for styling
+import '../../styles/AdminLogin.css';
 
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
@@ -17,7 +17,8 @@ export default function AdminLogin() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5005/api/admin/login', {
+      // ✅ Changed to your backend port 3010
+      const response = await fetch('http://72.60.41.54:3010/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +36,7 @@ export default function AdminLogin() {
         setError(data.message || 'Login failed');
       }
     } catch (error) {
-      setError('Network error. Please check if server is running.');
+      setError('Backend connection failed. Please check if server is running.');
     } finally {
       setLoading(false);
     }
@@ -62,7 +63,7 @@ export default function AdminLogin() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="admin@sabilillah.com"
+              placeholder="admin@sabilillah.org"  // ✅ Updated email
               required
             />
           </div>
@@ -73,7 +74,7 @@ export default function AdminLogin() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="admin123"
+              placeholder="Enter your password"
               required
             />
           </div>
@@ -88,9 +89,9 @@ export default function AdminLogin() {
         </form>
 
         <div className="login-footer">
-          <p><strong>Test Credentials:</strong></p>
-          <p>Email: admin@sabilillah.com</p>
-          <p>Password: admin123</p>
+          <p><strong>Demo Credentials:</strong></p>
+          <p>Email: admin@sabilillah.org</p>  {/* ✅ Updated */}
+          <p>Password: Aa1122@@##</p>         {/* ✅ Updated */}
         </div>
       </div>
     </div>

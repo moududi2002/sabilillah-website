@@ -19,11 +19,11 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#causes">Our Causes</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/campaigns">Our Causes</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
 
@@ -41,15 +41,26 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="contact-info">
-              <p>📧 info@sabilillah.org</p>
-              <p>📞 +880 XXXX-XXXXXX</p>
-              <p>📍 123 Foundation Road, Dhaka 1216, Bangladesh</p>
+              <p>
+                📧{" "}
+                <a
+                  href="mailto:contact@sabilillah.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  contact@sabilillahfoundation.org
+                </a>
+              </p>
+
+              <p>📞 +880 1910-649179 </p>
+              <p>📍 Kalukhali, Rajbari, Bangladesh - 7722 </p>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 Sabilillah Foundation. All rights reserved.</p>
+          <p>&copy; 2025-{new Date().getFullYear()} Sabilillah Foundation. All rights reserved.</p>
           <div className="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

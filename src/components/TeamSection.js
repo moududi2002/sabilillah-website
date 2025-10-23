@@ -6,29 +6,37 @@ export default function TeamSection() {
       id: 1,
       name: "Dr. Anichur Rahman",
       position: "Chairman",
-      bio: "Former professor of Islamic Studies with 25+ years of experience in social work and community development.",
+      bio: "PhD Researcher, Dept. of Applied Computing at The Georgia Southern University, USA with Studies 5+ years of experience in social work and community development.",
       photo: "/images/team/chairman.jpg"
     },
     {
       id: 2, 
       name: "Nazmul Huda",
-      position: "Executive Director",
+      position: "Chief of Finance and Operations",
       bio: "Social entrepreneur with expertise in project management and women empowerment initiatives across rural Bangladesh.",
       photo: "/images/team/director.jpg"
     },
     {
       id: 3,
       name: "Airin Afroj Aishi",
-      position: "Finance Secretary", 
+      position: "Deputy Director of Finance", 
       bio: "Chartered accountant with 15 years experience in non-profit financial management and transparency systems.",
       photo: "/images/team/finance.jpg"
     },
     {
       id: 4,
       name: "Abul Ala Moududi",
-      position: "Program Manager",
+      position: "Operational Director and Program Manager ",
       bio: "Development professional specializing in education and healthcare projects for underprivileged communities.",
-      photo: "/images/team/program.jpg"
+      photo: "/images/team/program.jpeg"
+    },
+
+    {
+      id: 5,
+      name: "Razaul Karim",
+      position: "Operational Assist. Director and Program Manager ",
+      bio: "Development professional specializing in education and healthcare projects for underprivileged communities.",
+      photo: "/images/team/program.jpeg"
     }
   ]
 
